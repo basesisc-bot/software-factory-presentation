@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Factory: Conecta, Crea, Crece</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .section {
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .title-section {
+            background: linear-gradient(135deg, #003366, #005599);
+            color: white;
+        }
+        .clase-baja-section {
+            background: #00A676;
+            color: white;
+        }
+        .clase-alta-section {
+            background: #003366;
+            color: white;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #003366, #00A676);
+            color: white;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 900px;
+            width: 90%;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            font-size: 2.8em;
+            margin: 0 0 20px;
+            color: inherit;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 15px 0;
+            color: #003366;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            text-align: left;
+            color: #444;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 1.1em;
+            text-align: left;
+            margin: 15px 0;
+            color: #555;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00A676;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            margin: 20px 0;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #008055;
+        }
+        .image-placeholder {
+            width: 100%;
+            max-width: 350px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .clase-baja-section .image-placeholder {
+            background: linear-gradient(135deg, #00A676, #4CAF50);
+        }
+        .clase-alta-section .image-placeholder {
+            background: linear-gradient(135deg, #003366, #0288D1);
+        }
+        .vibe-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
+            animation: pulse 12s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.05); }
+            100% { opacity: 0.3; transform: scale(1); }
+        }
+        .divider {
+            width: 70%;
+            height: 2px;
+            background: linear-gradient(to right, #003366, #00A676);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección 1: Introducción y Clarificación -->
+    <div class="section title-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>Software Factory: Conecta, Crea, Crece</h1>
+            <p>Una plataforma que une compradores y creadores de software, con herramientas de IA incremental y criptografía para mercados justos, escalando hacia proyectos de alto impacto.</p>
+            <div class="image-placeholder">Ejemplo: Equipo diverso conectando en red global (de tu sitio web o stock vibrante)</div>
+            <h2>¿Qué es?</h2>
+            <p>Somos una empresa de software que conecta compradores y creadores, cobrando comisiones por proyectos exitosos. Ofrecemos IA incremental para automatizaciones éticas, criptografía para mercados equilibrados, y soporte operativo para crecer sin riesgos.</p>
+            <h2>Beneficios Principales</h2>
+            <ul>
+                <li>Infraestructura de soporte para trabajar y ganar dinero fácilmente.</li>
+                <li>Proyectos de alto valor que generan ingresos significativos.</li>
+                <li>Colaboración en iniciativas globales para un futuro equilibrado.</li>
+            </ul>
+            <h2>Segmentos</h2>
+            <p>Unimos perfiles tecnológicos de 20-40 años: principiantes (estudiantes/emergentes) que buscan ingresos y propósito; expertos que escalan a proyectos de vanguardia como aeroespacial, todos colaborando sin competencia desleal.</p>
+            <h2>Diferencias</h2>
+            <p>Evitamos automatizaciones descontroladas que generan desigualdad. Promovemos crecimiento exponencial controlado, colaborativo, superando límites territoriales con innovaciones como en la revolución del nitrógeno, pero para desafíos modernos.</p>
+        </div>
+    </div>
+
+    <!-- Sección 2: Propuesta para Clase Baja (Principiantes) -->
+    <div class="section clase-baja-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>Para Principiantes: Tu Puerta al Éxito</h1>
+            <div class="image-placeholder">Ejemplo: Jóvenes programadores sonriendo en un coworking (accesible, diverso)</div>
+            <h2>Tu Problema Resuelto</h2>
+            <p>Conectamos desarrolladores nuevos con clientes reales, ofreciendo ingresos, soporte y un propósito claro en proyectos que importan.</p>
+            <h2>Beneficios Clave</h2>
+            <ul>
+                <li><strong>Trabajo inmediato:</strong> Encuentra clientes que buscan soluciones accesibles; cobra fácil con comisiones bajas (10%).</li>
+                <li><strong>Soporte total:</strong> Manejo de contratos y pagos para que te enfoques en crear.</li>
+                <li><strong>Propósito:</strong> Únete a proyectos globales que dan rumbo a tu vida, como mejorar el mundo con tecnología ética.</li>
+                <li><strong>Crecimiento fácil:</strong> Herramientas simples de IA y seguridad para aprender mientras ganas.</li>
+            </ul>
+            <h2>Características</h2>
+            <p>Interfaz amigable, guías de inicio, seguridad básica, acceso inicial a proyectos grandes, enfoque en aprendizaje y colaboración.</p>
+            <h2>Precio</h2>
+            <p>$49/mes (creadores, matching ilimitado); $99/mes (compradores, acceso a talentos emergentes). Más accesible que Upwork, con propósito.</p>
+            <div class="divider"></div>
+            <p>Tono: Amistoso, motivador, sin tecnicismos, inspirando confianza.</p>
+        </div>
+    </div>
+
+    <!-- Sección 3: Propuesta para Clase Alta (Expertos) -->
+    <div class="section clase-alta-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>Para Expertos: Innovación sin Límites</h1>
+            <div class="image-placeholder">Ejemplo: Sala de innovación con expertos en tecnología aeroespacial (elegante, profesional)</div>
+            <h2>Tu Problema Resuelto</h2>
+            <p>Escala a proyectos de alto impacto con herramientas avanzadas, redes exclusivas y colaboración global, sin riesgos ni competencias desleales.</p>
+            <h2>Beneficios Clave</h2>
+            <ul>
+                <li><strong>Proyectos premium:</strong> Conecta con clientes de alto nivel; comisiones bajas (5%) y altos ingresos.</li>
+                <li><strong>Tecnología avanzada:</strong> IA incremental para automatizaciones éticas; criptografía para mercados justos.</li>
+                <li><strong>Red global:</strong> Colabora en iniciativas de vanguardia como aeroespacial, con impacto más allá de la Tierra.</li>
+                <li><strong>Soporte elite:</strong> Gestión de riesgos, contratos inteligentes, dashboards de crecimiento.</li>
+            </ul>
+            <h2>Características</h2>
+            <p>Matching con IA avanzada, criptografía premium, soporte dedicado, acceso prioritario a proyectos de alto valor, integración con redes globales.</p>
+            <h2>Precio</h2>
+            <p>$199/mes (creadores, matching premium); $499/mes (compradores, acceso a expertos). Competitivo con Toptal, con enfoque ético.</p>
+            <div class="divider"></div>
+            <p>Tono: Profesional, técnico, enfocado en exclusividad y calidad.</p>
+        </div>
+    </div>
+
+    <!-- Sección 4: Llamada a la Acción -->
+    <div class="section cta-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>¡Únete al Futuro Hoy!</h1>
+            <div class="image-placeholder">Ejemplo: Camino ascendente con globo terráqueo digital (futurista, unificador)</div>
+            <p>Elige tu segmento y empieza con una prueba gratuita de 14 días. Contacta en [tu email/sitio web], regístrate y conecta tu primer proyecto.</p>
+            <a href="mailto:contacto@tusitio.com" class="cta-button">Comienza Ahora</a>
+            <h2>Revisión Final</h2>
+            <p>Coherente: Fluye de introducción a propuestas y acción. Clara: Textos breves, visuals atractivos, sin jergas para principiantes, técnico para expertos. Enfocada: Incluye IA, cripto, cooperación exponencial, analogías históricas (nitrógeno), todos los detalles del primer chat.</p>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Factory: Conecta, Crea, Crece</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .section {
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .title-section {
+            background: linear-gradient(135deg, #003366, #005599);
+            color: white;
+        }
+        .clase-baja-section {
+            background: #00A676;
+            color: white;
+        }
+        .clase-alta-section {
+            background: #003366;
+            color: white;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #003366, #00A676);
+            color: white;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 900px;
+            width: 90%;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            font-size: 2.8em;
+            margin: 0 0 20px;
+            color: inherit;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 15px 0;
+            color: #003366;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            text-align: left;
+            color: #444;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 1.1em;
+            text-align: left;
+            margin: 15px 0;
+            color: #555;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00A676;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            margin: 20px 0;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #008055;
+        }
+        .image-placeholder {
+            width: 100%;
+            max-width: 350px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .clase-baja-section .image-placeholder {
+            background: linear-gradient(135deg, #00A676, #4CAF50);
+        }
+        .clase-alta-section .image-placeholder {
+            background: linear-gradient(135deg, #003366, #0288D1);
+        }
+        .vibe-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
+            animation: pulse 12s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.05); }
+            100% { opacity: 0.3; transform: scale(1); }
+        }
+        .divider {
+            width: 70%;
+            height: 2px;
+            background: linear-gradient(to right, #003366, #00A676);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección 1: Introducción y Clarificación -->
+    <div class="section title-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>Software Factory: Conecta, Crea, Crece</h1>
+            <p>Una plataforma que une compradores y creadores de software, con herramientas de IA incremental y criptografía para mercados justos, escalando hacia proyectos de alto impacto.</p>
+            <div class="image-placeholder">Ejemplo: Equipo diverso conectando en red global (de tu sitio web o stock vibrante)</div>
+            <h2>¿Qué es?</h2>
+            <p>Somos una empresa de software que conecta compradores y creadores, cobrando comisiones por proyectos exitosos. Ofrecemos IA incremental para automatizaciones éticas, criptografía para mercados equilibrados, y soporte operativo para crecer sin riesgos.</p>
+            <h2>Beneficios Principales</h2>
+            <ul>
+                <li>Infraestructura de soporte para trabajar y ganar dinero fácilmente.</li>
+                <li>Proyectos de alto valor que generan ingresos significativos.</li>
+                <li>Colaboración en iniciativas globales para un futuro equilibrado.</li>
+            </ul>
+            <h2>Segmentos</h2>
+            <p>Unimos perfiles tecnológicos de 20-40 años: principiantes (estudiantes/emergentes) que buscan ingresos y propósito; expertos que escalan a proyectos de vanguardia como aeroespacial, todos colaborando sin competencia desleal.</p>
+            <h2>Diferencias</h2>
+            <p>Evitamos automatizaciones descontroladas que generan desigualdad. Promovemos crecimiento exponencial controlado, colaborativo, superando límites territoriales con innovaciones como en la revolución del nitrógeno, pero para desafíos modernos.</p>
+        </div>
+    </div>
+
+    <!-- Sección 2: Propuesta para Clase Baja (Principiantes) -->
+    <div class="section clase-baja-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>Para Principiantes: Tu Puerta al Éxito</h1>
+            <div class="image-placeholder">Ejemplo: Jóvenes programadores sonriendo en un coworking (accesible, diverso)</div>
+            <h2>Tu Problema Resuelto</h2>
+            <p>Conectamos desarrolladores nuevos con clientes reales, ofreciendo ingresos, soporte y un propósito claro en proyectos que importan.</p>
+            <h2>Beneficios Clave</h2>
+            <ul>
+                <li><strong>Trabajo inmediato:</strong> Encuentra clientes que buscan soluciones accesibles; cobra fácil con comisiones bajas (10%).</li>
+                <li><strong>Soporte total:</strong> Manejo de contratos y pagos para que te enfoques en crear.</li>
+                <li><strong>Propósito:</strong> Únete a proyectos globales que dan rumbo a tu vida, como mejorar el mundo con tecnología ética.</li>
+                <li><strong>Crecimiento fácil:</strong> Herramientas simples de IA y seguridad para aprender mientras ganas.</li>
+            </ul>
+            <h2>Características</h2>
+            <p>Interfaz amigable, guías de inicio, seguridad básica, acceso inicial a proyectos grandes, enfoque en aprendizaje y colaboración.</p>
+            <h2>Precio</h2>
+            <p>$49/mes (creadores, matching ilimitado); $99/mes (compradores, acceso a talentos emergentes). Más accesible que Upwork, con propósito.</p>
+            <div class="divider"></div>
+            <p>Tono: Amistoso, motivador, sin tecnicismos, inspirando confianza.</p>
+        </div>
+    </div>
+
+    <!-- Sección 3: Propuesta para Clase Alta (Expertos) -->
+    <div class="section clase-alta-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>Para Expertos: Innovación sin Límites</h1>
+            <div class="image-placeholder">Ejemplo: Sala de innovación con expertos en tecnología aeroespacial (elegante, profesional)</div>
+            <h2>Tu Problema Resuelto</h2>
+            <p>Escala a proyectos de alto impacto con herramientas avanzadas, redes exclusivas y colaboración global, sin riesgos ni competencias desleales.</p>
+            <h2>Beneficios Clave</h2>
+            <ul>
+                <li><strong>Proyectos premium:</strong> Conecta con clientes de alto nivel; comisiones bajas (5%) y altos ingresos.</li>
+                <li><strong>Tecnología avanzada:</strong> IA incremental para automatizaciones éticas; criptografía para mercados justos.</li>
+                <li><strong>Red global:</strong> Colabora en iniciativas de vanguardia como aeroespacial, con impacto más allá de la Tierra.</li>
+                <li><strong>Soporte elite:</strong> Gestión de riesgos, contratos inteligentes, dashboards de crecimiento.</li>
+            </ul>
+            <h2>Características</h2>
+            <p>Matching con IA avanzada, criptografía premium, soporte dedicado, acceso prioritario a proyectos de alto valor, integración con redes globales.</p>
+            <h2>Precio</h2>
+            <p>$199/mes (creadores, matching premium); $499/mes (compradores, acceso a expertos). Competitivo con Toptal, con enfoque ético.</p>
+            <div class="divider"></div>
+            <p>Tono: Profesional, técnico, enfocado en exclusividad y calidad.</p>
+        </div>
+    </div>
+
+    <!-- Sección 4: Llamada a la Acción -->
+    <div class="section cta-section">
+        <div class="vibe-overlay"></div>
+        <div class="content-box">
+            <h1>¡Únete al Futuro Hoy!</h1>
+            <div class="image-placeholder">Ejemplo: Camino ascendente con globo terráqueo digital (futurista, unificador)</div>
+            <p>Elige tu segmento y empieza con una prueba gratuita de 14 días. Contacta en [tu email/sitio web], regístrate y conecta tu primer proyecto.</p>
+            <a href="mailto:contacto@tusitio.com" class="cta-button">Comienza Ahora</a>
+            <h2>Revisión Final</h2>
+            <p>Coherente: Fluye de introducción a propuestas y acción. Clara: Textos breves, visuals atractivos, sin jergas para principiantes, técnico para expertos. Enfocada: Incluye IA, cripto, cooperación exponencial, analogías históricas (nitrógeno), todos los detalles del primer chat.</p>
+        </div>
+    </div>
+</body>
+</html>
